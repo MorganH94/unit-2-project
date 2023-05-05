@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(26, 24, 24);
 }
 
 .App-link {
@@ -35,4 +35,78 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.movie-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.watchlist {
+  width: 500px;
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  text-align: center;
+}
+
+html {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  background: #0059ff;
+  gap: 20px;
+  padding: 0px 70px;
+  justify-content: start;
+  font-size: x-large;
+  text-align: center;
+  color:rgb(255, 255, 255);
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  width: calc(100vw - 500px);
+  flex-direction: column;
+}
+
+button {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 253, 253);
+  border-radius: 5px;
+  padding: 0px 20px;
+  font-size: medium;
+}
+
+button:hover {
+  background-color: #e61a5e;
+  cursor: pointer;
 }
